@@ -5,7 +5,7 @@
     "description": "test-landing-page",
     "main": "index.js",
     "scripts": {
-        "predeploy": "yarn build",
+        "predeploy": "yarn run build",
         "deploy": "gh-pages -d build",
         "docker-start-dev": "docker-compose -f \"docker\\DEV.docker-compose.yml\" up",
         "docker-stop-dev": "docker-compose -f \"docker\\DEV.docker-compose.yml\" down",
