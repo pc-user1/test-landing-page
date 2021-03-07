@@ -3,6 +3,7 @@
 	padding: 0;
 }
 html, body {
+  overflow-x: hidden;
 	height: 100%;
 	font-family: 'Raleway', sans-serif;
 }
@@ -57,8 +58,6 @@ nav {
 .topNav .icon {
 	display: none;
 }
-
-
 .mainContent {
 	max-width: 100%;
 }
@@ -129,6 +128,7 @@ footer nav a:hover {
 	display: flex;
 	justify-content: center;
 }
+
 .social img {
 	width: 30px;
 	margin-left: 15px;
@@ -340,21 +340,18 @@ h3 {
 	grid-template-columns: auto auto;
 	grid-gap: 50px 100px;
 }
-
 .mapouter {
 	position:relative;
 	text-align:right;
 	height:511px;
 	width:1080px;
 }
-
 .gmap_canvas {
 	overflow:hidden;
 	background:none!important;
 	height:511px;
 	width:1080px;
 }
-
 .mapInfo {
 	padding-top: 20px;
 }
@@ -387,10 +384,7 @@ nav {
 	top: 16px;
 	right: 0px;
 	border-bottom: none;
-	
 }
-
-
 .topNav.responsive a {
 	float: none;
 	display: block;
@@ -407,6 +401,16 @@ nav {
 .blog-container {
 	width: 28rem;
 	margin-top: .5rem;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.footer__responsive-navbar{
+	display: flex;
+	flex-wrap: wrap;
 }
 
 }
