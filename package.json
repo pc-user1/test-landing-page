@@ -1,10 +1,12 @@
 {
+    "homepage": "https://pc-user1.github.io/test-landing-page",
     "name": "test-landing-page",
     "version": "0.0.2",
     "description": "test-landing-page",
     "main": "index.js",
-    "homepage": "https://pc-user1.github.io/test-landing-page/",
     "scripts": {
+        "predeploy": "yarn build",
+        "deploy": "gh-pages -d build",
         "docker-start-dev": "docker-compose -f \"docker\\DEV.docker-compose.yml\" up",
         "docker-stop-dev": "docker-compose -f \"docker\\DEV.docker-compose.yml\" down",
         "dev": "yarn run watch:server & yarn run watch:client ",
@@ -26,9 +28,7 @@
         "build:ssr": "cross-env NODE_ENV=production webpack --config webpack.ssr.config.js --progress --profile --colors",
         "heroku-postbuild": "yarn run build:prod",
         "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook",
-        "predeploy": "yarn build",
-        "deploy": "gh-pages -d build"
+        "build-storybook": "build-storybook"
     },
     "author": "",
     "license": "MIT",
