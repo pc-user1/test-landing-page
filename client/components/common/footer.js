@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer>
-      <nav className="footer__responsive-navbar">
+      <nav className="footer-responsive-navbar">
         <Link to="/home">HOME</Link>
         <Link to="/projects">PROJECTS</Link>
         <Link to="/blog">BLOG</Link>
